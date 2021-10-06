@@ -36,18 +36,18 @@ public class main{
                    pageDisplay.indexPage();
                }
                else{
-                //    creation.main();
-                // Save recipe object in an array, we will use this later to step through
-                
+                   creation.main(null);
+                   System.out.println("Going Back to the Main Menu!");
+                   pageDisplay.indexPage();
+
+                    // Save recipe object in an array, we will use this later to step through
                }
            }
            else if (userSelect.equals("2")){
                clearConsole();
                pageDisplay.showAll();
-            
+                
                 // Method of ShowAndSelect
-
-
                System.out.println("To Go Back to Main Page: Type : Main");
                
                if(userSelect.equals("Main")){
