@@ -1,0 +1,17 @@
+Key Points:
+
+Compile using javac. 
+
+Run using java. 
+
+
+1. Main file needs to have 0 implementations. Only calling other methods. 
+
+
+
+
+
+TODO:
+
+1. Need to make code more robust. Where can exceptions occur? Need to manage all exceptions.
+2. Comments. 
