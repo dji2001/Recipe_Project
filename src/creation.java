@@ -2,7 +2,15 @@ import java.io.*;
 import java.util.*;
 
 class creation {
-    
+    private static recipe newRecipe = new recipe();
+
+    // Getter methods
+
+    public static recipe getRecipe(){
+        return newRecipe;
+    }
+
+
     public static void clearConsole(){
         System.out.print("\033[H\033[2J");
         System.out.flush();
@@ -10,7 +18,7 @@ class creation {
     public static void main(String [] args) throws IOException{
         
 
-        recipe newRecipe = new recipe();
+        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String userSelect;
         System.out.println("Enter the Name: ");

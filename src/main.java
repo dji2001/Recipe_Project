@@ -15,6 +15,10 @@ public class main{
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
 
+        // Creation array
+
+        List<recipe> recipeCreatedArray = new ArrayList<recipe>();
+
         // Clear Console
         clearConsole();
         pageDisplay.indexPage();
@@ -40,7 +44,10 @@ public class main{
                    System.out.println("Going Back to the Main Menu!");
                    pageDisplay.indexPage();
 
+
                     // Save recipe object in an array, we will use this later to step through
+
+                    recipeCreatedArray.add(creation.getRecipe());
                }
            }
            else if (userSelect.equals("2")){
