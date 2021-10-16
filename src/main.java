@@ -45,7 +45,8 @@ public class main{
            }
            else if (userSelect.equals("2")){
                clearConsole();
-               pageDisplay.showAll();
+               pageDisplay.searchSelect();
+
                 
                 // Method of ShowAndSelect
                System.out.println("To Go Back to Main Page: Type : Main");
@@ -54,6 +55,19 @@ public class main{
                    clearConsole();
                    pageDisplay.indexPage();
                }
+           }
+           else if (userSelect.equals("1")) {
+        	   clearConsole();
+        	   pageDisplay.showAll();
+               printAll.main();
+        	   
+               
+               System.out.println("To Go Back to Main Page: Type : Main");
+               if(userSelect.equals("Main")){
+                   clearConsole();
+                   pageDisplay.indexPage();
+               }
+        	   
            }
             userSelect = reader.readLine();
         }         

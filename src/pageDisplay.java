@@ -20,7 +20,9 @@ public class pageDisplay{
     }
     public static void showAll(){
         System.out.println("Showing All Recipes: ");
-        
+    }
+    public static void searchSelect() {
+    	System.out.println("Please input the recipe you are tring to look for");
     }
     public static void main(String args[]){
 
