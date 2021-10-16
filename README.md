@@ -6,6 +6,6 @@ Yash Bharti;
 Brian Hsieh;
 Emily Herschmann;
 
-Main steps as for now:
-1. lay out the architecture, which functions are needed, what are the inputs and outputs, the format of database, etc
-2. Distribute the tasks among the team members, work out a schedual.
+Main steps:
+1. Create the search and print method
+2. Enable two way of access recipe: print all in once or line by line
