@@ -45,6 +45,7 @@ public class main{
            }
            else if (userSelect.equals("2")){
                clearConsole();
+<<<<<<< Updated upstream:src/main.java
                pageDisplay.searchSelect();
 
                 
@@ -54,19 +55,48 @@ public class main{
                if(userSelect.equals("Main")){
                    clearConsole();
                    pageDisplay.indexPage();
+=======
+
+               while (!userSelect.equals("Main")) {
+                   pageDisplay.searchSelect();
+            	   userSelect = reader.readLine();
+                   search.searchRecipe(userSelect);
+                    
+                    // Method of ShowAndSelect
+                   System.out.println("To Go Back to Main Page: Type : Main");
+                   System.out.println("To Continue Searching: Type Anything Else");
+                   userSelect = reader.readLine();
+                   if(userSelect.equals("Main")){
+                       clearConsole();
+                       pageDisplay.indexPage();
+                   }
+            	   
+>>>>>>> Stashed changes:main.java
                }
-           }
-           else if (userSelect.equals("1")) {
-        	   clearConsole();
-        	   pageDisplay.showAll();
-               printAll.main();
-        	   
                
-               System.out.println("To Go Back to Main Page: Type : Main");
-               if(userSelect.equals("Main")){
-                   clearConsole();
-                   pageDisplay.indexPage();
-               }
+           }
+           
+           else if (userSelect.equals("1")) {
+    		   clearConsole();
+        	   pageDisplay.showAll();
+               printAll.viewNames();
+               
+        	   while (!userSelect.equals("Main")) {
+                   pageDisplay.selectRecipe();
+                   userSelect=reader.readLine();
+                   printAll.printRecipe(userSelect);
+            	   
+                   
+                   System.out.println("To Go Back to Main Page: Type : Main");
+                   System.out.println("To Continue Looking: Type Anything Else");
+                   userSelect = reader.readLine();
+                   if(userSelect.equals("Main")){
+                       clearConsole();
+                       pageDisplay.indexPage();
+                   }
+        		   
+        	   }
+        	  
         	   
            }
             userSelect = reader.readLine();

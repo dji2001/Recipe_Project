@@ -21,8 +21,11 @@ public class pageDisplay{
     public static void showAll(){
         System.out.println("Showing All Recipes: ");
     }
+    public static void selectRecipe() {
+    	System.out.println("Please input the recipe name you want to open: ");
+    }
     public static void searchSelect() {
-    	System.out.println("Please input the recipe you are tring to look for");
+    	System.out.println("Please input the recipe you are tring to look for: ");
     }
     public static void main(String args[]){
 
