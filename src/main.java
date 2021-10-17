@@ -45,6 +45,9 @@ public class main{
            }
            else if (userSelect.equals("2")){
                clearConsole();
+<<<<<<< HEAD
+
+=======
 <<<<<<< Updated upstream:src/main.java
                pageDisplay.searchSelect();
 
@@ -56,6 +59,7 @@ public class main{
                    clearConsole();
                    pageDisplay.indexPage();
 =======
+>>>>>>> 1ba1a37730808ca85640d2e34637236599e38339
 
                while (!userSelect.equals("Main")) {
                    pageDisplay.searchSelect();
@@ -71,7 +75,10 @@ public class main{
                        pageDisplay.indexPage();
                    }
             	   
+<<<<<<< HEAD
+=======
 >>>>>>> Stashed changes:main.java
+>>>>>>> 1ba1a37730808ca85640d2e34637236599e38339
                }
                
            }
