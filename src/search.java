@@ -10,7 +10,7 @@ public class search {
     public static void searchRecipe(String name) throws IOException {
     	Scanner scanner = new Scanner(System.in);
     	System.out.println();
-		File[] files = new File("C:\\Users\\Brian Hsieh\\Documents\\college\\collaborating\\recipe_project\\Recipe_Project\\src\\recipes").listFiles();
+		File[] files = new File("./recipes").listFiles();
 		System.out.println(files);
 		if (files == null) {
 			System.out.println("test");
@@ -31,7 +31,7 @@ public class search {
 							answer = scanner.nextLine();
 						}
 						fileFound = true;
-						String fileName = "C:\\Users\\Brian Hsieh\\Documents\\college\\collaborating\\recipe_project\\Recipe_Project\\src\\recipes\\" + temp.substring(0, temp.indexOf(".")) + ".txt";
+						String fileName = "./recipes/" + temp.substring(0, temp.indexOf(".")) + ".txt";
 						File file = new File(fileName);
 						BufferedReader br = new BufferedReader(new FileReader(file));
 						String read;
