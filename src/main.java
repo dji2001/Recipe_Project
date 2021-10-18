@@ -77,11 +77,15 @@ public class main{
             	   
                    
                    System.out.println("To Go Back to Main Page: Type : Main");
-                   System.out.println("To Continue Looking: Type Anything Else");
+                   System.out.ptintln("If you need to look at the list of recipes again: Type: List")
+                   System.out.println("To Continue to other recipes without checking the list again: Type Anything Else");
                    userSelect = reader.readLine();
                    if(userSelect.equals("Main")){
                        clearConsole();
                        pageDisplay.indexPage();
+                   }
+                   if(userSelect.equals("List")) {
+                	   printAll.viewNames();
                    }
         		   
         	   }
