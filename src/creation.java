@@ -13,16 +13,17 @@ class creation {
         recipe newRecipe = new recipe();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String userSelect;
-        System.out.println("Enter the Name: ");
+        System.out.println("Enter the name of the recipe: ");
         userSelect = reader.readLine();
         newRecipe.setName(userSelect);
         System.out.println("Enter the Description: ");
         userSelect = reader.readLine();
         newRecipe.setDescription(userSelect);
         clearConsole();
-        System.out.println("Now, we will start adding the ingredients: To Start : Type: Start");
-        System.out.println("Add the ingredient when prompted, if done with the current ingredient, type DONE");
-        System.out.println("If you want to exit the program: type Exit");
+        System.out.println("Now, we will start adding the ingredients: ");
+        System.out.println("To Start: Type: 'Start'");
+        System.out.println("Add the ingredient when prompted, if done with the current ingredient, type 'DONE'");
+        System.out.println("If you want to exit the program: type 'Exit'");
         userSelect = reader.readLine();
         int count = 0;
         if (userSelect.equals("Exit")){
@@ -43,13 +44,16 @@ class creation {
             
            
         }
+        
         if (userSelect.equals("Exit")){
             System.exit(0);
         }
         clearConsole();
-        System.out.println("Now, we will start adding the instructions: To Start : Type: Start");
-        System.out.println("Add the instruction when prompted, if done with the current instruction, type DONE");
-        System.out.println("If you want to exit the program: type Exit");
+        System.out.println("Ingredients for the recipe "+ newRecipe.getName() + " have been added successfully.");
+        System.out.println("Now, we will start adding the instructions: ");
+        System.out.println("To Start: Type: 'Start'");
+        System.out.println("Add the instruction when prompted, if done with the current instruction, type 'DONE'");
+        System.out.println("If you want to exit the program: type 'Exit'");
         userSelect = reader.readLine();
         if (userSelect.equals("Exit")){
             System.exit(0);
