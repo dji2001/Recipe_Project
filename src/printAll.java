@@ -22,11 +22,10 @@ class printAll{
 			System.out.println(recipeName.substring(0, recipeName.indexOf(".")));
 		}
 	}
-	public static void searchRecipe(String name) throws IOException {
+	public static void printRecipe(String name) throws IOException {
     	Scanner scanner = new Scanner(System.in);
     	System.out.println();
 		File[] files = new File("./recipes").listFiles();
-		System.out.println(files);
 		if (files == null) {
 			System.out.println("test");
 		}
@@ -35,7 +34,7 @@ class printAll{
 		for (File tempFile : files) {
 		    if (tempFile.isFile()) {
 		    	String temp = tempFile.getName();
-		    	String temp2 = temp);
+		    	String temp2 = temp;
 				if (temp2.substring(0, temp2.indexOf(".")).equals(name)) {
 						System.out.println("If you would you like to read the entire recipe, enter '1'");
 						System.out.println("However, if you would like to read one instruction at a time, enter '2'");

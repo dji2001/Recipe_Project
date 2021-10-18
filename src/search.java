@@ -11,9 +11,8 @@ public class search {
     	Scanner scanner = new Scanner(System.in);
     	System.out.println();
 		File[] files = new File("./recipes").listFiles();
-		System.out.println(files);
 		if (files == null) {
-			System.out.println("test");
+			System.out.println("There is no recipe in database");
 		}
 
 		boolean fileFound = false;
