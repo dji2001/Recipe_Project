@@ -29,7 +29,7 @@ class creation {
             System.exit(0);
         }
         if (userSelect.equals("Start")){
-            System.out.println("Starting Now!");
+            System.out.println("Please enter the ingredients below:");
         }
         
         while((!userSelect.equals("Exit") && !userSelect.equals("DONE"))){
