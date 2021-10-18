@@ -22,7 +22,7 @@ public class pageDisplay{
         System.out.println("Showing All Recipes: ");
     }
     public static void selectRecipe() {
-    	System.out.println("Please input the recipe name you want to open, with no spaces: ");
+    	System.out.println("Please input the recipe name you want to open, with no spaces and in lower case: ");
     }
     public static void searchSelect() {
     	System.out.println("Please input the recipe you are tring to look for, with no spaces: ");
