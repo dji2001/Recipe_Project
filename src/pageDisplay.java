@@ -22,10 +22,10 @@ public class pageDisplay{
         System.out.println("Showing All Recipes: ");
     }
     public static void selectRecipe() {
-    	System.out.println("Please input the recipe name you want to open: ");
+    	System.out.println("Please input the recipe name you want to open, with no spaces: ");
     }
     public static void searchSelect() {
-    	System.out.println("Please input the recipe you are tring to look for: ");
+    	System.out.println("Please input the recipe you are tring to look for, with no spaces: ");
     }
     public static void main(String args[]){
 
