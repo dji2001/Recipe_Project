@@ -1,4 +1,4 @@
-# Recipe_Project
+# Recipe Project
 This is the group project 1 of CSCI-UA-480: Remote Software Development, 2021 Fall.
 Group members:
 Duoji Jiang;
